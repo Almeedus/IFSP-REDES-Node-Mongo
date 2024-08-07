@@ -36,3 +36,18 @@ e por fim inicie o script.
 ```
 node server.js
 ```
+
+
+### OBSERVAÇÕES
+Caso o mongo não abra a porta, siga estas instruções
+```
+docker run -d -p 27017:27017 --name mongodb mongo
+```
+Verifique se o container está rodando
+```
+docker ps
+```
+Para verificar a conexão com o MongoDB
+```
+docker exec -it mongo-teste mongosh
+```
