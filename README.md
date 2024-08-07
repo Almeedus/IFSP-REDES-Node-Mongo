@@ -30,9 +30,17 @@ mongosh
 # Quase tudo pronto...
 Agora para realizar uma instale o git para clonarmos este repositório para dentro da maquina e navegue para dentro do repositório.
 ```
-cd /dockerfile
+cd /IFSP-REDES-Node-Mongo
 ```
-e por fim inicie o script.
+Baixe as dependências.
+```
+npm init -y
+```
+E instale o Express.
+```
+npm install express body-parser mongoose
+```
+Por fim inicie o script.
 ```
 node server.js
 ```
